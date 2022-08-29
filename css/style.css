@@ -1,0 +1,44 @@
+/*---------------------------
+ ヘッダー
+---------------------------*/
+
+#header {
+  /* フレキシブルレイアウト対応 */
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 450px;
+  background-size: auto 100%;
+  background: url(../img/header/tolga-ahmetler-yvZ1kG511j4-unsplash.jpg) center center;
+}
+
+#header .titlelogo {
+	font-size: 90px;
+	color: #FFF;
+
+}
+
+#header .subtitlelogo {
+	display: block;
+	font-size: 40px;
+	color: #FFF;
+	text-align: center;
+}
+
+/*---------------------------
+ グローバルナビ
+---------------------------*/
+
+#gnav {
+	padding: 10px;
+}
+
+#gnav ul {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+    justify-content: space-between;
+}
