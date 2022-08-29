@@ -1,9 +1,35 @@
+* ,*:before,*:after{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+  word-break: break-all;
+}
+
+
+/*---------------------------
+ 全体
+---------------------------*/
+#wrapper {
+  background-color: #F2F2F2;
+}
+
+.inner {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 /*---------------------------
  ヘッダー
 ---------------------------*/
 
 #header {
-  /* フレキシブルレイアウト対応 */
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
@@ -18,7 +44,8 @@
 #header .titlelogo {
 	font-size: 90px;
 	color: #FFF;
-
+	line-height: 1;
+	letter-spacing: -2px;
 }
 
 #header .subtitlelogo {
@@ -26,6 +53,7 @@
 	font-size: 40px;
 	color: #FFF;
 	text-align: center;
+	margin-top: 30px;
 }
 
 /*---------------------------
@@ -34,11 +62,24 @@
 
 #gnav {
 	padding: 10px;
+	z-index: 100;
 }
 
 #gnav ul {
 	display: -webkit-flex;
 	display: flex;
-	-webkit-justify-content: space-between;
-    justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+    justify-content: center;
+}
+
+#gnav li:last-child {
+	margin-right: 0;
+}
+
+#gnav li a{
+	margin-left: 12px;
 }
