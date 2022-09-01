@@ -8,9 +8,29 @@
 
 body {
 	font-family: 'Noto Sans JP',sans-serif;
+	font-size: 15px;
   word-break: break-all;
+  line-height: 1.8;
+  letter-spacing: 0.8px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  vertical-align: bottom;
+  display: block;
+  opacity: .8;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+ul, li {
+	list-style: none;
+}
 
 /*---------------------------
  全体
@@ -59,6 +79,10 @@ body {
 	margin-top: 30px;
 }
 
+#header .logo {
+	display: block;
+}
+
 /*---------------------------
  グローバルナビ
 ---------------------------*/
@@ -66,6 +90,7 @@ body {
 #gnav {
 	padding: 10px;
 	z-index: 100;
+	font-family: 'Work Sans', sans-serif;
 }
 
 #gnav ul {
@@ -79,12 +104,20 @@ body {
     justify-content: center;
 }
 
+#gnav li {
+	font-weight: bold;
+	font-size: 22px;
+	padding: 0 20px;
+}
+
 #gnav li:last-child {
 	margin-right: 0;
 }
 
 #gnav li a{
 	margin-left: 12px;
+	letter-spacing: -0.01em;
+	color: #333;
 }
 
 #gnav.m_fixed {
@@ -108,4 +141,102 @@ body {
 
 .section .section-title {
 	font-family: 'Oswald', sans-serif;
+	display: inline-block;
+	letter-spacing: -0.02em;
+}
+
+.section .section-title-block{
+	text-align: center;
+	margin-bottom: 25;
+}
+
+.section .card-content {
+	text-align: center;
+}
+
+/*---------------------------
+ WORKS
+---------------------------*/
+
+#WORKS .card {
+	width: 60%;
+	margin-bottom: 20px;
+}
+
+#WORKS .card-image {
+	display: block;
+	margin-bottom: 6px;
+	height: 245px;
+}
+
+#WORKS .card-caption {
+	text-align: center;
+}
+
+#WORKS .card-caption-title {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#WORKS .card-caption-info {
+	font-size: 12px;
+}
+
+#WORKS .card-caption-url {
+	font-size: 10px;
+}
+
+#WORKS .card-wrapper {
+	padding: 10px 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+#WORKS .card-andmore {
+	width: 40%;
+}
+
+#WORKS .card-andmore-figure {
+	margin-top: 300px;
+	text-align: center;
+	background-color: #f3f3f3;
+	font-size: 50px;
+	color: #444;
+}
+
+/*---------------------------
+ SKILL
+---------------------------*/
+
+#Skill .card-wrapper {
+	width: 70%;
+	margin: 0 auto;
+	padding: 20px 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-frex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+#skill .card {
+  flex-basis: 46%;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
