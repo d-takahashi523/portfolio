@@ -91,6 +91,7 @@ ul, li {
 	padding: 10px;
 	z-index: 100;
 	font-family: 'Work Sans', sans-serif;
+	background-color: #333;
 }
 
 #gnav ul {
@@ -110,6 +111,14 @@ ul, li {
 	padding: 0 20px;
 }
 
+#gnav .far {
+	margin-right: 5px;
+}
+
+#gnav .fas {
+	margin-right: 5px;
+}
+
 #gnav li:last-child {
 	margin-right: 0;
 }
@@ -117,7 +126,7 @@ ul, li {
 #gnav li a{
 	margin-left: 12px;
 	letter-spacing: -0.01em;
-	color: #333;
+	color: #FFF;
 }
 
 #gnav.m_fixed {
@@ -125,7 +134,7 @@ ul, li {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #f3f3f3;
+  background-color: #333;
   box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
@@ -136,13 +145,17 @@ ul, li {
 ---------------------------*/
 
 .section .inner {
-  padding: 80px 10px 10px 0px;
+  padding: 100px 10px 10px 0px;
 }
 
 .section .section-title {
 	font-family: 'Oswald', sans-serif;
 	display: inline-block;
 	letter-spacing: -0.02em;
+	font-weight: bold;
+	font-size: 45px;
+	margin-bottom: 10px;
+	color: #444;
 }
 
 .section .section-title-block{
@@ -150,8 +163,21 @@ ul, li {
 	margin-bottom: 25;
 }
 
-.section .card-content {
+.section .section-title-word {
+	margin-left: 5px;
+}
+
+/*---------------------------
+ Profile
+---------------------------*/
+#Profile {
 	text-align: center;
+	display: block;
+}
+
+#Profile .txt {
+	text-align: left;
+	display: inline-block;
 }
 
 /*---------------------------
@@ -159,14 +185,8 @@ ul, li {
 ---------------------------*/
 
 #WORKS .card {
-	width: 60%;
+	width: 50%;
 	margin-bottom: 20px;
-}
-
-#WORKS .card-image {
-	display: block;
-	margin-bottom: 6px;
-	height: 245px;
 }
 
 #WORKS .card-caption {
@@ -202,7 +222,7 @@ ul, li {
 	width: 40%;
 }
 
-#WORKS .card-andmore-figure {
+#WORKS .andmore-info {
 	margin-top: 300px;
 	text-align: center;
 	background-color: #f3f3f3;
@@ -228,7 +248,7 @@ ul, li {
 	justify-content: space-between;
 }
 
-#skill .card {
+#Skill .card {
   flex-basis: 46%;
   margin-bottom: 50px;
   display: -webkit-box;
@@ -239,4 +259,123 @@ ul, li {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+#Skill .card:first-child {
+  flex-basis: 100%;
+}
+
+#Skill .card-content {
+  flex-basis: calc(100% - 75px - 30px);
+  text-align: center;
+}
+
+#Skill .skill-card-title {
+  margin-bottom: 3px;
+  font-size:26px;
+  padding: 24px;
+  font-weight: bold;
+}
+
+#Skill .skill-card-title i{
+  margin-right: 12px;
+}
+
+#Skill .rate {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 20px;
+  font-size: 20px;
+}
+
+#Skill .rate:before, #Skill .rate:after {
+	margin-top: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+}
+
+#Skill .rate:before {
+  color: #ddd;
+}
+
+#Skill .rate:after {
+  color: #808080;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#Skill .rate0:after {
+	width: 0;
+}
+
+#Skill .rate1:after {
+  width: 20px;
+}
+
+#Skill .rate2:after {
+  width: 40px;
+}
+
+#Skill .rate3:after {
+  width: 62px;
+}
+
+#Skill .rate4:after {
+  width: 82px;
+}
+
+#Skill .rate5:after {
+  width: 100px;
+}
+
+/*---------------------------
+ contact
+---------------------------*/
+#CONTACT {
+	text-align: center;
+	display: block;
+}
+
+#CONTACT .contact-address {
+	text-align: left;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+/*---------------------------
+ フッター
+---------------------------*/
+#footer {
+	background-color: #333;
+}
+
+#footer .inner {
+	padding: 15px;
+}
+
+#footer .footer-link ul {
+	margin-bottom: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	justify-content: center;
+}
+
+#footer .footer-link li {
+	font-size: 15px;
+	padding: 0 20px;
+}
+
+#footer .footer-link li a{
+	color: #FFF;
 }

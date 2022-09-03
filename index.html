@@ -12,6 +12,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/script.js"></script>
@@ -27,10 +28,10 @@
 		</header>
 		<nav id="gnav">
 	  		<ul>
-	    		<li><a href="#Profile">PROFILE</a>
-	    		<li><a href="#Skill">SKILL</a>
-	    		<li><a href="#Works">WORKS</a>
-	    		<li><a href="#Contact">CONTACT</a>
+	    		<li><a href="#Profile"><i class="far fa-user"></i>PROFILE</a></li>
+	    		<li><a href="#Skill"><i class="far fa-lightbulb"></i>SKILL</a></li>
+	    		<li><a href="#WORKS"><i class="fas fa-laptop-code"></i>WORKS</a></li>
+	    		<li><a href="#CONTACT"><i class="far fa-comments"></i>CONTACT</a></li>
 	  		</ul>
 		</nav>
 		<main id="contents">
@@ -38,7 +39,7 @@
 	 	  <section class="section" id="Profile">
 	 	  	<div class="inner">
 	 	  		<div class="section-title-block">
-	 	  			<h2 class="section-title"><span class="section-title-word">PROFILE</span></h2>
+	 	  			<h2 class="section-title"><i class="far fa-user"></i></i><span class="section-title-word">PROFILE</span></h2>
 	 	  		</div>
 	 	  		<p class="txt">
 	 	  			はじめまして。関東でITエンジニアとして活動している髙橋と申します。社会人2年目です。<br>
@@ -46,8 +47,9 @@
 	 	  			私が思うエンジニアとは、<b><u>「エンジニアは、役割のないものへ役割という名の命を与える仕事。」</b></u>だと考えています。<br>
 	 	  			そのためには、よりスキルや知識を身につけどこへ行っても重宝されるエンジニアとして成長しなければなりません。<br>
 	 	  			もっと開発に携わって勉強していきたいと思い、転職を決意しました。<br>
-	 	  			現在では、インフラエンジニアとして働きながら、Web関連の勉強をしています。＃このポートフォリオサイトも勉強のひとつです。
-	 	  			（2022年8月30日更新）
+	 	  			現在では、インフラエンジニアとして働きながら、Web関連の勉強をしています。＃このポートフォリオサイトも勉強のひとつです。<br>
+	 	  			ポートフォリオは現在1つしかありませんが、将来的にはなにか別のものづくりもしていきたいと思っています。
+	 	  			（2022年9月3日更新）
 	 	  			
 	 			</p>
 	 	  	</div>
@@ -56,7 +58,7 @@
 	 	<section class="section" id="Skill">
 	 		<div class="inner">
 	 			<div class="section-title-block">
-	 				<h2 class="section-title"><span class="section-title-word">SKILL</span></h2>
+	 				<h2 class="section-title"><i class="far fa-lightbulb"></i><span class="section-title-word">SKILL</span></h2>
 	 			</div>
 				
 	 			<div class="card-wrapper">
@@ -82,7 +84,7 @@
 	 								<tr>
 	 									<th scope="row">Linux</th>
 	 									<td><span class="rating"><p class="rate rate2"></p></span></td>
-	 									<td>Debian系(Ubuntu,Raspbian),RHEL,CentOS,Solaris,HP-UX</td>
+	 									<td>Debian系(Ubuntu,Raspbian),RHEL,<br>CentOS,Solaris,HP-UX</td>
 	 								</tr>
 	 							</tbody>
 	 						</table>
@@ -180,10 +182,11 @@
 
 	 		</div>
 	 	</section>
+
 	 	<section class="section" id="WORKS">
 	 		<div class="inner">
 	 			<div class="section-title-block">
-	 				<h2 class="section-title"><span class="section-title-word">WORKS</span></h2>
+	 				<h2 class="section-title"><i class="fas fa-laptop-code"></i><span class="section-title-word">WORKS</span></h2>
 	 			</div>
 
 	 			<div class="card-wrapper myportforio">
@@ -193,7 +196,7 @@
 	 						<p class="card-caption-title">ポートフォリオ</p>
 	 						<p class="card-caption-info">今回作成しているポートフォリオサイトです。</p>
 	 						<p class="card-caption-info">HTML/CSS/JS/bootstrap</p>
-	 						<p class="card-caption-url"><a class="url" href="https://github.com/d-takahashi523/portfolio" target="_blank">git hub</a></p>
+	 						<p class="card-caption-url"><i class="fab fa-github"></i><a class="url" href="https://github.com/d-takahashi523/portfolio" target="_blank">git hub</a></p>
 	 					</figcaption>
 	 				</figure>
 
@@ -201,6 +204,7 @@
 	 					<figcaption class="card-andmore-figure">
 	 						<p class="andmore-info">andmore...</p>
 	 					</figcaption>
+		 					
 	 				</figure>
 	 				
 
@@ -213,7 +217,7 @@
 	 	<section class="section" id="CONTACT">
 	 		<div class="inner">
 	 			<div class="section-title-block">
-	 				<h2 class="section-title"><span class="section-title-word">CONTACT</span></h2>
+	 				<h2 class="section-title"><i class="far fa-comments"></i><span class="section-title-word">CONTACT</span></h2>
 	 			</div>
 	 			<p class="contact-address">
 	 				何かありましたらお気軽にメールからご連絡ください。<br>
@@ -227,10 +231,10 @@
 	 		<div class="inner">
 	 			<nav class="footer-link">
 	 				<ul>
-	 					<li><a href="#Profile">PROFILE</a>
-	    				<li><a href="#Skill">SKILL</a>
-	    				<li><a href="#Works">WORKS</a>
-	    				<li><a href="#Contact">CONTACT</a>
+			    		<li><a href="#Profile">PROFILE</a></li>
+	    				<li><a href="#Skill">SKILL</a></li>
+	    				<li><a href="#WORKS">WORKS</a></li>
+	    				<li><a href="#CONTACT">CONTACT</a></li>
 	 				</ul>
 	 			</nav>
 	 		</div> 
